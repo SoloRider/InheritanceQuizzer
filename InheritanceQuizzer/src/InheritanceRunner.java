@@ -32,7 +32,7 @@ public class InheritanceRunner
 				//Question 3
 				System.out.println();
 				System.out.println("Next question.");
-				System.out.println("If X is the superclass and B and A both extended them, and C extended B, would... B b = new A() work?");
+				System.out.println("If X is the superclass and B and A both extended them, and C extended B, would... B b1 = new A() work?");
 				String choice2 = user1nput.nextLine();
 				if(choice2.equals("No") || choice2.equals("no"))
 					{
@@ -44,9 +44,15 @@ public class InheritanceRunner
 				//Question 4
 				System.out.println();
 				System.out.println("Next question.");
-				System.out.println("Referring to the question above, would X.runAMethod work?");
+				System.out.println("Referring to the question above, would x1.runAMethod work?");
 				String choice3 = user1nput.nextLine();
-				if()
+				if(choice3.equals("Yes") || choice3.equals("yes"))
+					{
+						System.out.println("You are correct.");
+						correct++;
+					}
+				else
+					System.out.println("That is wrong.");
 //				Bird b1 = new Bird( );
 //				Bird b2 = new Wren( );
 //				Wren w1 = new Bird( );
