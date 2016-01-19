@@ -122,7 +122,7 @@ public class InheritanceRunner
 				System.out.println("Next question.");
 				System.out.println("Referring to the previous question, would that run with super?");
 				String choice9 = user1nput.nextLine();
-				if(choice9.equals("Yes") || choice9.equals("Yes"))
+				if(choice9.equals("No") || choice9.equals("no"))
 					{
 						System.out.println("That is correct.");
 						correct++;
@@ -156,9 +156,21 @@ public class InheritanceRunner
 				//Question 13
 				System.out.println();
 				System.out.println("Next question.");
-				System.out.println("If Lambo and Ferrari extend NiceCars and LamboElemento extends Lambo, would LamboElemento.runFerrariMethod(); work?");
+				System.out.println("Now I'm going to add something. Assume NiceCars and Italia both have a runSmooth(); method. Would the runSmooth() method run in the super class if the Italia method is called with a super?");
 				String choice12 = user1nput.nextLine();
-				if(choice12.equals("No") || choice12.equals("no"))
+				if(choice12.equals("Yes") || choice12.equals("yes"))
+					{
+						System.out.println("That is correct.");
+						correct++;
+					}
+				else
+					System.out.println("That is wrong.");
+				//Question 14
+				System.out.println();
+				System.out.println("Next question.");
+				System.out.println("");
+				String choice13 = user1nput.nextLine();
+				if(choice13.equals("No") || choice13.equals("no"))
 					{
 						System.out.println("That is correct.");
 						correct++;
