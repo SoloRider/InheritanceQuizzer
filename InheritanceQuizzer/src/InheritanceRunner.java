@@ -9,6 +9,7 @@ public class InheritanceRunner
 				System.out.println("Bird b2 = new Wren()");
 				System.out.println("Wren w1 = new Bird()");
 				System.out.println("Wren w2 = new Wren()");
+				
 				//Question 1
 				System.out.println("Here are your questions.");
 				System.out.println("Would Bird b2 = new Wren(); throw an error at you?");
@@ -168,7 +169,7 @@ public class InheritanceRunner
 				//Question 14
 				System.out.println();
 				System.out.println("Next question.");
-				System.out.println("");
+				System.out.println("If Game is the super class, and Halo and Destiny both extend it, would Game g1 = new Halo(); work?");
 				String choice13 = user1nput.nextLine();
 				if(choice13.equals("No") || choice13.equals("no"))
 					{
@@ -177,5 +178,133 @@ public class InheritanceRunner
 					}
 				else
 					System.out.println("That is wrong.");
+				//Question 15
+				System.out.println();
+				System.out.println("Next question.");
+				System.out.println("If firstPerson was a method in Halo and Bungie but thirdPerson was also a method in bungie Bungie, would g1.firstPerson run Destiny or Halo?");
+				String choice14 = user1nput.nextLine();
+				if(choice14.equals("Halo") || choice14.equals("halo"))
+					{
+						System.out.println("That is correct.");
+						correct++;
+					}
+				else
+					System.out.println("That is wrong.");
+				//Question 16
+				System.out.println();
+				System.out.println("Next question.");
+				System.out.println("If thirteenHours is the super class and Violent, Action, and Thriller extended it, would Thriller t1 = new thirteenHours() run?");
+				String choice15 = user1nput.nextLine();
+				if(choice15.equals("No") || choice15.equals("no"))
+					{
+						System.out.println("That is correct.");
+						correct++;
+					}
+				else
+					System.out.println("That is wrong.");
+				//Question 17
+				System.out.println();
+				System.out.println("Next question.");
+				System.out.println("If thirteenHours and violent had a method called Guns() and it called super.Guns(), which one would it run [1] thirteenHours [2] Violent?");
+				String choice16 = user1nput.nextLine();
+				if(choice16.equals("1") || choice16.equals("thirteenHours"))
+					{
+						System.out.println("That is correct.");
+						correct++;
+					}
+				else
+					System.out.println("That is wrong.");
+				//Question 18
+				System.out.println();
+				System.out.println("Next question.");
+				System.out.println("If Trees is the super class and Paper and Syrup are extended from, would Paper p1 = new Tree() work?");
+				String choice17 = user1nput.nextLine();
+				if(choice17.equals("Yes") || choice17.equals("yes"))
+					{
+						System.out.println("That is correct.");
+						correct++;
+					}
+				else
+					System.out.println("That is wrong.");
+				//Question 19
+				System.out.println();
+				System.out.println("Next question.");
+				System.out.println("Would Trees.runPaperMethod() work?");
+				String choice18 = user1nput.nextLine();
+				if(choice18.equals("Yes") || choice18.equals("yes"))
+					{
+						System.out.println("That is correct.");
+						correct++;
+					}
+				else
+					System.out.println("That is wrong.");
+				//Question 20
+				System.out.println();
+				System.out.println("Next question.");
+				System.out.println("If Device is the super class and cellPhone and Computer extended Device, would Computer c1 = new cellPhone() work?");
+				String choice19 = user1nput.nextLine();
+				if(choice19.equals("No") || choice19.equals("no"))
+					{
+						System.out.println("That is correct.");
+						correct++;
+					}
+				else
+					System.out.println("That is wrong.");
+				//Question 21
+				System.out.println();
+				System.out.println("Next question.");
+				System.out.println("Adding on... Apple and Android now extend from cellPhone and Mac and Windows now extend from Computer. Would Device.runAppleMethod() work?");
+				String choice20 = user1nput.nextLine();
+				if(choice20.equals("Yes") || choice20.equals("yes"))
+					{
+						System.out.println("That is correct.");
+						correct++;
+					}
+				else
+					System.out.println("That is wrong.");
+				//Question 22
+				System.out.println();
+				System.out.println("Next question.");
+				System.out.println("Would Windows w1 = new Computer() work?");
+				String choice21 = user1nput.nextLine();
+				if(choice21.equals("Yes") || choice21.equals("yes"))
+					{
+						System.out.println("That is correct.");
+						correct++;
+					}
+				else
+					System.out.println("That is wrong.");
+				//Question 23
+				System.out.println();
+				System.out.println("Next question.");
+				System.out.println("Would Mac.runAppleMethod() work?");
+				String choice22 = user1nput.nextLine();
+				if(choice22.equals("No") || choice22.equals("no"))
+					{
+						System.out.println("That is correct.");
+						correct++;
+					}
+				else
+					System.out.println("That is wrong.");
+				//Question 24
+				System.out.println();
+				System.out.println("Next question.");
+				System.out.println("Finale. Would Computer c1 = new Computer() work?");
+				String choice23 = user1nput.nextLine();
+				if(choice23.equals("No") || choice23.equals("no"))
+					{
+						System.out.println("That is right. Just kidding, how did you get that wrong?");
+					}
+				else
+					{
+						System.out.println("That is wrong. I missed the semi-colon. I'm just kidding, you got it.");
+						correct++;
+					}
+				if(correct == 24)
+				{
+					System.out.println("Congratz, you got 100%!!!! You got " + correct + " out of 24.");
+				}
+				System.out.println();
+				System.out.println("You got " + correct + " out of 24.");
 			}
 	}
